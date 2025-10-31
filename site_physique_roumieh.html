@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Concours de Physique – Roumieh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+    }
+    header {
+      background: #0f4c81;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 50px;
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: #0f4c81;
+      margin-top: 0;
+    }
+    section h3 {
+      color: #1a6ca8;
+    }
+    .formula {
+      font-family: "Courier New", monospace;
+      background: #f0f0f0;
+      padding: 4px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 2px 0;
+    }
+    ul {
+      margin-top: 0;
+    }
+    .exercise {
+      background: #eaf3f9;
+      padding: 10px 15px;
+      border-left: 4px solid #0f4c81;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+    .exercise p {
+      margin: 0 0 10px 0;
+    }
+    .solution {
+      margin: 0;
+      padding-left: 15px;
+      border-left: 3px solid #1a6ca8;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Concours de Physique – Roumieh</h1>
+    <p>Ressources complètes de cours et exercices pour votre préparation</p>
+  </header>
+  <div class="container">
+
+    <!-- MÉCANIQUE CLASSIQUE -->
+    <section id="mecanique">
+      <h2>Mécanique classique</h2>
+      
+      <h3>Lois de Newton</h3>
+      <p>Les lois de Newton sont les bases de la mécanique :</p>
+      <ul>
+        <li><strong>Première loi (Principe d’inertie) :</strong> un corps persévère dans son état de repos ou de mouvement rectiligne uniforme en l’absence de forces extérieures.</li>
+        <li><strong>Deuxième loi (Principe fondamental de la dynamique) :</strong> dans un référentiel galiléen, la somme des forces extérieures appliquées à un système est égale au produit de sa masse par son accélération. On l’écrit&nbsp;<span class="formula">∑\!\vec F = m\vec a</span>.</li>
+        <li><strong>Troisième loi (Action-réaction) :</strong> si un corps A exerce une force sur un corps B, alors B exerce sur A une force opposée de même intensité et de direction opposée.</li>
+      </ul>
+      <h4>Exercice : tir parabolique</h4>
+      <div class="exercise">
+        <p>Un joueur lance un ballon avec une vitesse initiale <em>v₀</em> horizontale depuis une hauteur <em>h</em>. On néglige la résistance de l’air.</p>
+        <p><strong>Questions&nbsp;:</strong></p>
+        <ul>
+          <li>Établir les équations horaires du mouvement.</li>
+          <li>Déterminer l’équation de la trajectoire <em>y(x)</em>.</li>
+        </ul>
+        <p class="solution"><strong>Solution&nbsp;:</strong> La seule force appliquée est le poids <span class="formula">\vec{P} = m\vec{g}</span> qui donne une accélération verticale <span class="formula">\vec a = \vec g</span>. Le mouvement horizontal est uniforme : <span class="formula">x(t) = v₀t</span>. Verticalement : <span class="formula">y(t) = h - \tfrac{1}{2}gt^2</span>. On élimine le temps <em>t</em> pour obtenir <span class="formula">y(x) = h - \dfrac{g}{2v₀^2}x^2</span>, trajectoire parabolique.</p>
+      </div>
+
+      <h3>Gravitation universelle</h3>
+      <p>La loi de la gravitation de Newton stipule que deux corps de masses <em>m₁</em> et <em>m₂</em> s’attirent mutuellement avec une force proportionnelle au produit de leurs masses et inversement proportionnelle au carré de leur distance&nbsp;<em>r</em>&nbsp;:</p>
+      <p><span class="formula">F = G \dfrac{m₁ m₂}{r^2}</span></p>
+      <p>où <span class="formula">G</span> est la constante de gravitation universelle. Cette loi explique le mouvement des planètes et la chute des corps sur Terre.</p>
+
+      <h4>Exercice : attraction Terre-Lune</h4>
+      <div class="exercise">
+        <p>La masse de la Terre est <em>M<sub>T</sub> ≈ 5,97 ×10<sup>24</sup> kg</em> et celle de la Lune <em>M<sub>L</sub> ≈ 7,35 ×10<sup>22</sup> kg</em>. Leur distance moyenne est <em>d ≈ 3,84 ×10<sup>8</sup> m</em>. Calculer l’intensité de la force gravitationnelle.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> On applique la formule ci‑dessus : <span class="formula">F = G \frac{M_T M_L}{d^2}</span>. Avec <span class="formula">G ≈ 6{,}67 ×10^{−11} \text{SI}</span>, on obtient <span class="formula">F ≈ 2{,}0 ×10^{20} N</span>. Cette force maintient la Lune en orbite.</p>
+      </div>
+
+      <h3>Énergies cinétique et potentielle</h3>
+      <p>L’énergie cinétique est l’énergie due au mouvement d’un corps : <span class="formula">E_c = \tfrac{1}{2} m v^2</span>.</p>
+      <p>L’énergie potentielle gravitationnelle est l’énergie de position dans un champ de pesanteur près de la surface terrestre : <span class="formula">E_p = m g h</span>. Elle augmente avec l’altitude <em>h</em>.</p>
+      <p>L’énergie mécanique totale est la somme <span class="formula">E_m = E_c + E_p</span>, constante si seules des forces conservatives agissent.</p>
+
+      <h4>Exercice : balle lancée verticalement</h4>
+      <div class="exercise">
+        <p>Une balle de masse 200 g est lancée verticalement vers le haut avec une vitesse initiale de 20 m/s. On néglige la résistance de l’air.</p>
+        <ul>
+          <li>Déterminer la hauteur maximale atteinte.</li>
+          <li>Vérifier que l’énergie mécanique est conservée.</li>
+        </ul>
+        <p class="solution"><strong>Solution&nbsp;:</strong> À la hauteur maximale, la vitesse devient nulle : toute l’énergie cinétique initiale est convertie en énergie potentielle. On résout <span class="formula">\tfrac{1}{2} m v_0^2 = m g h_{\max}</span> soit <span class="formula">h_{\max} = \dfrac{v_0^2}{2g} ≈ 20{,}4 m</span>. L’énergie mécanique initiale <span class="formula">E_m = \tfrac{1}{2} \times 0{,}2 \times 20^2 = 40 J</span> se retrouve entièrement sous forme potentielle au sommet : <span class="formula">m g h_{\max} ≈ 40 J</span>.</p>
+      </div>
+
+      <h3>Mouvement orbital : lois de Kepler</h3>
+      <p>Les lois de Kepler décrivent le mouvement des planètes autour du Soleil :</p>
+      <ul>
+        <li><strong>1<sup>re</sup> loi :</strong> chaque planète suit une trajectoire elliptique dont le Soleil occupe un foyer.</li>
+        <li><strong>2<sup>e</sup> loi (loi des aires) :</strong> le segment reliant la planète au Soleil balaie des aires égales en des temps égaux ; la vitesse est plus grande au périhélie et plus faible à l’aphélie.</li>
+        <li><strong>3<sup>e</sup> loi (loi des périodes) :</strong> le carré de la période <em>T</em> d’une planète est proportionnel au cube du demi‑grand axe de son orbite : <span class="formula">\dfrac{T^2}{a^3} = \text{constante}</span>. Pour une orbite autour d’un corps de masse <em>M</em>, cette constante vaut <span class="formula">\dfrac{4\pi^2}{G M}</span>.</li>
+      </ul>
+      <h4>Exercice : période d’un satellite</h4>
+      <div class="exercise">
+        <p>On place un satellite en orbite circulaire autour de la Terre à une altitude <em>h</em>. La Terre a un rayon <em>R_T ≈ 6{,}37 ×10^6 m</em> et une masse <em>M_T</em>.</p>
+        <p>Montrer que la période orbitale s’exprime par <span class="formula">T = 2\pi \sqrt{\dfrac{(R_T + h)^3}{G M_T}}</span> et calculer <em>T</em> pour <em>h = 400 km</em>.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> On applique la 3<sup>e</sup> loi de Kepler. La distance au centre est <span class="formula">r = R_T + h</span>. Insérant les valeurs (<span class="formula">G = 6{,}67 ×10^{−11}</span>, <span class="formula">M_T = 5{,}97 ×10^{24}</span>), on trouve <span class="formula">T ≈ 1{,}55 ×10^4 s</span>, soit environ 4 heures 20.</p>
+      </div>
+    </section>
+
+    <!-- THERMODYNAMIQUE -->
+    <section id="thermo">
+      <h2>Thermodynamique</h2>
+
+      <h3>Premier principe</h3>
+      <p>Le premier principe (conservation de l’énergie) stipule que l’énergie interne d’un système change sous l’effet de la chaleur reçue et du travail fourni : <span class="formula">\Delta U = Q - W</span>.</p>
+      <ul>
+        <li><strong>Chaleur (<span class="formula">Q</span>) :</strong> énergie transférée à un système en raison d’une différence de température.</li>
+        <li><strong>Travail (<span class="formula">W</span>) :</strong> énergie transférée lorsqu’une force déplace le point d’application.</li>
+      </ul>
+      <p>Dans un cycle complet, la variation d’énergie interne est nulle. Ceci est le fondement des machines thermiques.</p>
+      <h4>Exercice : chauffage d’un gaz</h4>
+      <div class="exercise">
+        <p>Un gaz parfait monoatomique de 1 mole est contenu dans un cylindre. On lui apporte 1 kJ de chaleur à volume constant. Calculer la variation de température.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> À volume constant, tout l’apport de chaleur se transforme en variation d’énergie interne. Pour un gaz monoatomique : <span class="formula">\Delta U = \tfrac{3}{2} n R \Delta T</span>. D’où <span class="formula">\Delta T = \dfrac{2Q}{3 n R} = \dfrac{2×1000}{3×1×8{,}314} ≈ 80 K</span>.</p>
+      </div>
+
+      <h3>Second principe et entropie</h3>
+      <p>Le second principe affirme qu’il est impossible de convertir intégralement l’énergie thermique en travail ; toute transformation réelle augmente l’entropie globale. L’entropie <span class="formula">S</span> mesure le désordre ; elle augmente lors de processus irréversibles.</p>
+      <p>Dans une machine thermique de rendement <span class="formula">η</span>, le maximum théorique est donné par le rendement de Carnot&nbsp;: <span class="formula">η_{max} = 1 - \dfrac{T_f}{T_h}</span> où <span class="formula">T_h</span> et <span class="formula">T_f</span> sont les températures des sources chaude et froide.</p>
+      <h4>Exercice : rendement d’une machine</h4>
+      <div class="exercise">
+        <p>Une machine reçoit 500 J de chaleur d’une source chaude à 600 K et rejette 350 J à une source froide à 300 K.</p>
+        <ul>
+          <li>Calculer le rendement réel.</li>
+          <li>Comparer avec le rendement de Carnot.</li>
+        </ul>
+        <p class="solution"><strong>Solution&nbsp;:</strong> Le rendement réel est <span class="formula">η = \frac{W}{Q_h} = \frac{500-350}{500} = 0{,}30</span>. Le rendement de Carnot pour ces températures est <span class="formula">η_{C} = 1 - \frac{300}{600} = 0{,}50</span>. La machine réelle est moins efficace en raison des pertes.</p>
+      </div>
+
+      <h3>Loi des gaz parfaits</h3>
+      <p>Pour un gaz parfait, la relation entre pression (<em>P</em>), volume (<em>V</em>), température (<em>T</em>) et quantité de matière (<em>n</em>) est :</p>
+      <p><span class="formula">P V = n R T</span></p>
+      <p>où <span class="formula">R</span> est la constante des gaz parfaits (≈ 8,314 J·mol⁻¹·K⁻¹). Cette loi généralise les lois de Boyle-Mariotte et de Charles.</p>
+      <h4>Exercice : dilatation d’un gaz</h4>
+      <div class="exercise">
+        <p>Un ballon contient 0,5 mole d’hélium à 300 K et 1 atm. Il s’élève et sa température reste constante tandis que la pression extérieure chute à 0,7 atm. Calculer le nouveau volume.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> À température constante (<span class="formula">T</span> constant), <span class="formula">P V</span> est constant. Donc <span class="formula">V_2 = V_1 \frac{P_1}{P_2} = V_1 \frac{1{,}0}{0{,}7} ≈ 1{,}43 V_1</span>. Le volume augmente de 43 %.</p>
+      </div>
+    </section>
+
+    <!-- ÉLECTROMAGNÉTISME -->
+    <section id="electro">
+      <h2>Électromagnétisme et circuits</h2>
+      
+      <h3>Loi de Coulomb</h3>
+      <p>La loi de Coulomb décrit la force électrique entre deux charges ponctuelles <em>q₁</em> et <em>q₂</em> séparées d’une distance <em>r</em> :</p>
+      <p><span class="formula">F = k_e \dfrac{|q_1 q_2|}{r^2}</span></p>
+      <p>La force est attractive si les charges sont de signes opposés et répulsive si elles sont de même signe. La constante <span class="formula">k_e</span> vaut environ <span class="formula">8{,}99 ×10^9 N·m^2·C^{-2}</span>.</p>
+      <h4>Exercice : interaction de charges</h4>
+      <div class="exercise">
+        <p>Deux charges de +2 µC et −3 µC sont distantes de 5 cm.</p>
+        <ul>
+          <li>Calculer l’intensité de la force qui s’exerce entre elles.</li>
+          <li>Indiquer son sens.</li>
+        </ul>
+        <p class="solution"><strong>Solution&nbsp;:</strong> <span class="formula">F = k_e \frac{|2×10^{-6} × (-3×10^{-6})|}{0{,}05^2} ≈ 2{,}16 N</span>. La force est attractive (les charges sont de signes opposés) et dirigée l’une vers l’autre.</p>
+      </div>
+
+      <h3>Loi d’Ohm et circuits</h3>
+      <p>Dans un conducteur ohmique, la tension (<span class="formula">U</span>) est proportionnelle à l’intensité du courant (<span class="formula">I</span>) : <span class="formula">U = R I</span> où <span class="formula">R</span> est la résistance.</p>
+      <p>La puissance dissipée par un conducteur est <span class="formula">P = U I = R I^2</span>. La loi d’Ohm s’applique aux résistances mais les diodes ou lampes présentent des lois non linéaires.</p>
+      <h4>Exercice : montage en série</h4>
+      <div class="exercise">
+        <p>Deux résistances de 4 Ω et 6 Ω sont placées en série sous une tension de 15 V.</p>
+        <ul>
+          <li>Calculer le courant dans le circuit.</li>
+          <li>Déterminer la tension aux bornes de chaque résistance.</li>
+        </ul>
+        <p class="solution"><strong>Solution&nbsp;:</strong> La résistance équivalente est <span class="formula">R_{eq} = 4 + 6 = 10 Ω</span>. Le courant est <span class="formula">I = \frac{U}{R_{eq}} = 1{,}5 A</span>. Les tensions sont <span class="formula">U_1 = I×4 = 6 V</span> et <span class="formula">U_2 = I×6 = 9 V</span>.</p>
+      </div>
+
+      <h3>Champ électrique et potentiel</h3>
+      <p>Le champ électrique créé par une charge ponctuelle <em>q</em> est :</p>
+      <p><span class="formula">\vec{E} = k_e \frac{q}{r^2}\hat{u}_r</span></p>
+      <p>Le potentiel électrique à une distance <em>r</em> d’une charge est <span class="formula">V = k_e \frac{q}{r}</span>. Dans les circuits, la différence de potentiel (tension) fournit l’énergie permettant au courant de circuler.</p>
+    </section>
+
+    <!-- OPTIQUE ET ONDES -->
+    <section id="optique">
+      <h2>Optique et ondes</h2>
+
+      <h3>Loi de Snell-Descartes (réfraction)</h3>
+      <p>Lorsque la lumière passe d’un milieu d’indice de réfraction <span class="formula">n_1</span> à un autre <span class="formula">n_2</span>, les angles d’incidence (<span class="formula">θ_1</span>) et de réfraction (<span class="formula">θ_2</span>) sont liés par :</p>
+      <p><span class="formula">n_1 \sin θ_1 = n_2 \sin θ_2</span></p>
+      <p>Si <span class="formula">n_2 > n_1</span>, le rayon est réfracté vers la normale; sinon il s’en éloigne. L’indice de réfraction est défini par <span class="formula">n = c/v</span>, rapport de la vitesse de la lumière dans le vide à celle dans le milieu.</p>
+      <h4>Exercice : angle de réfraction</h4>
+      <div class="exercise">
+        <p>Un faisceau passe de l’air (<span class="formula">n_{air}≈1,00</span>) vers l’eau (<span class="formula">n_{eau}≈1,33</span>) avec un angle d’incidence de 30°. Calculer l’angle de réfraction.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> D’après la loi de Snell : <span class="formula">\sin θ_2 = \frac{n_1}{n_2}\sin θ_1 = \frac{1{,}00}{1{,}33}×\sin 30° ≈ 0{,}375</span>. Donc <span class="formula">θ_2 ≈ 22°</span>. Le rayon se rapproche de la normale.</p>
+      </div>
+
+      <h3>Réflexion</h3>
+      <p>La loi de la réflexion indique que l’angle de réflexion est égal à l’angle d’incidence. L’image observée dans un miroir plan est virtuelle et symétrique du point objet par rapport au plan du miroir.</p>
+      
+      <h3>Ondes mécaniques</h3>
+      <p>Une onde est la propagation d’une perturbation. Pour une onde progressive sinusoïdale de fréquence <span class="formula">f</span>, la longueur d’onde est <span class="formula">λ = \dfrac{v}{f}</span>, où <span class="formula">v</span> est la vitesse de propagation. La période <span class="formula">T</span> vaut <span class="formula">1/f</span>.</p>
+      <h4>Exercice : onde sur une corde</h4>
+      <div class="exercise">
+        <p>Une corde transmet une onde se propageant à 5 m/s avec une fréquence de 2 Hz.</p>
+        <p>Déterminer sa longueur d’onde et sa période.</p>
+        <p class="solution"><strong>Solution&nbsp;:</strong> La période est <span class="formula">T = 1/f = 0{,}5 s</span>. La longueur d’onde est <span class="formula">λ = v/f = 5/2 = 2{,}5 m</span>.</p>
+      </div>
+    </section>
+
+    <!-- AUTRES CONCEPTS -->
+    <section id="divers">
+      <h2>Autres concepts utiles</h2>
+
+      <h3>Moments et couples de forces</h3>
+      <p>Le moment d’une force <span class="formula">\vec F</span> par rapport à un point <em>O</em> est <span class="formula">\vec{M_O} = \vec{r} \times \vec{F}</span>, où <span class="formula">\vec{r}</span> est le vecteur position. Il mesure l’effet de rotation de la force. Pour qu’un système soit en équilibre, la somme des moments doit être nulle.</p>
+
+      <h3>Oscillations et mouvement harmonique</h3>
+      <p>Un oscillateur harmonique simple obéit à l’équation différentielle <span class="formula">\ddot x + \omega^2 x = 0</span> où <span class="formula">\omega = \sqrt{k/m}</span> est la pulsation. Sa solution est sinusoïdale : <span class="formula">x(t) = A \cos (\omega t + φ)</span>. L’énergie oscille entre énergie cinétique et potentielle élastique.</p>
+
+      <h3>Pression et forces dans les fluides</h3>
+      <p>La pression est la force exercée par unité de surface. Dans un fluide au repos, la variation de pression avec la profondeur <span class="formula">z</span> est donnée par <span class="formula">P(z) = P_0 + ρ g z</span> où <span class="formula">ρ</span> est la masse volumique du fluide.</p>
+
+      <h3>Induction et loi de Faraday</h3>
+      <p>La loi de Faraday indique qu’une variation du flux magnétique à travers un circuit induit une force électromotrice&nbsp;: <span class="formula">\mathcal{E} = -\dfrac{dΦ_B}{dt}</span>. Cette force engendre un courant induit qui s’oppose à la variation du flux (loi de Lenz).</p>
+    </section>
+
+    <footer>
+      <p style="text-align:center; font-size:0.8rem; color:#666;">Ce site offre un condensé des notions essentielles de physique pour le concours de Roumieh. Les exercices sont des exemples typiques pour vous entraîner.</p>
+    </footer>
+  </div>
+</body>
+</html>
